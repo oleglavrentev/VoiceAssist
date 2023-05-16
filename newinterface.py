@@ -14,20 +14,20 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(539, 656)
+        MainWindow.resize(810, 842)
         font = QtGui.QFont()
         font.setPointSize(8)
         MainWindow.setFont(font)
-        MainWindow.setStyleSheet("background-color: #b0abab;")
+        MainWindow.setStyleSheet("background-color:rgb(85, 85, 255);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(60, 560, 171, 61))
+        self.pushButton.setGeometry(QtCore.QRect(30, 740, 171, 61))
         font = QtGui.QFont()
         font.setPointSize(23)
         self.pushButton.setFont(font)
         self.pushButton.setStyleSheet("QPushButton {\n"
-"    background-color: #c7c3c3;\n"
+"    background-color: rgb(255, 255, 255);\n"
 "    border-radius: 6;\n"
 "}\n"
 "\n"
@@ -40,12 +40,12 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(300, 560, 171, 61))
+        self.pushButton_2.setGeometry(QtCore.QRect(560, 740, 171, 61))
         font = QtGui.QFont()
         font.setPointSize(23)
         self.pushButton_2.setFont(font)
         self.pushButton_2.setStyleSheet("QPushButton {\n"
-"    background-color: #c7c3c3;\n"
+"    background-color: rgb(255, 255, 255);\n"
 "    border-radius: 6;\n"
 "}\n"
 "\n"
@@ -58,18 +58,20 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_2.setObjectName("pushButton_2")
         self.listWidget = QtWidgets.QListWidget(self.centralwidget)
-        self.listWidget.setGeometry(QtCore.QRect(20, 70, 481, 471))
+        self.listWidget.setGeometry(QtCore.QRect(20, 70, 771, 641))
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setPointSize(16)
         self.listWidget.setFont(font)
         self.listWidget.setStyleSheet("QListWidget {\n"
-"    background-color: #c7c3c3;\n"
+"    background-color: rgb(255, 255, 255);\n"
 "    color: black;    \n"
 "    border-radius: 7;\n"
 "}")
+        self.listWidget.setBatchSize(50)
+        self.listWidget.setWordWrap(True)
         self.listWidget.setObjectName("listWidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(130, 20, 241, 31))
+        self.label.setGeometry(QtCore.QRect(290, 20, 241, 31))
         font = QtGui.QFont()
         font.setPointSize(20)
         font.setBold(False)
@@ -80,6 +82,34 @@ class Ui_MainWindow(object):
         self.label.setFont(font)
         self.label.setObjectName("label")
         MainWindow.setCentralWidget(self.centralwidget)
+        self.menuBar = QtWidgets.QMenuBar(MainWindow)
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 810, 26))
+        self.menuBar.setObjectName("menuBar")
+        self.menu = QtWidgets.QMenu(self.menuBar)
+        self.menu.setObjectName("menu")
+        self.menu_2 = QtWidgets.QMenu(self.menuBar)
+        self.menu_2.setObjectName("menu_2")
+        MainWindow.setMenuBar(self.menuBar)
+        self.info = QtWidgets.QAction(MainWindow)
+        self.info.setObjectName("info")
+        self.action_house = QtWidgets.QAction(MainWindow)
+        self.action_house.setObjectName("action_house")
+        self.action_institut = QtWidgets.QAction(MainWindow)
+        self.action_institut.setObjectName("action_institut")
+        self.action_rukovodstvo = QtWidgets.QAction(MainWindow)
+        self.action_rukovodstvo.setObjectName("action_rukovodstvo")
+        self.action_org = QtWidgets.QAction(MainWindow)
+        self.action_org.setObjectName("action_org")
+        self.action_abbit = QtWidgets.QAction(MainWindow)
+        self.action_abbit.setObjectName("action_abbit")
+        self.menu.addAction(self.info)
+        self.menu_2.addAction(self.action_house)
+        self.menu_2.addAction(self.action_institut)
+        self.menu_2.addAction(self.action_rukovodstvo)
+        self.menu_2.addAction(self.action_org)
+        self.menu_2.addAction(self.action_abbit)
+        self.menuBar.addAction(self.menu_2.menuAction())
+        self.menuBar.addAction(self.menu.menuAction())
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -90,3 +120,11 @@ class Ui_MainWindow(object):
         self.pushButton.setText(_translate("MainWindow", "Начать"))
         self.pushButton_2.setText(_translate("MainWindow", "Стоп"))
         self.label.setText(_translate("MainWindow", "Voice Assistant"))
+        self.menu.setTitle(_translate("MainWindow", "Справка"))
+        self.menu_2.setTitle(_translate("MainWindow", "Список вопросов"))
+        self.info.setText(_translate("MainWindow", "Информация о помощнике"))
+        self.action_house.setText(_translate("MainWindow", "Про общежития"))
+        self.action_institut.setText(_translate("MainWindow", "Про институты"))
+        self.action_rukovodstvo.setText(_translate("MainWindow", "Про руководство"))
+        self.action_org.setText(_translate("MainWindow", "Про общественные организации"))
+        self.action_abbit.setText(_translate("MainWindow", "Информация для абитуриентов"))
