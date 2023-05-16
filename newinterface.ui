@@ -19,7 +19,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: #b0abab;</string>
+   <string notr="true">background-color:rgb(85, 85, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushButton">
@@ -38,7 +38,7 @@
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-	background-color: #c7c3c3;
+	background-color: rgb(255, 255, 255);
 	border-radius: 6;
 }
 
@@ -70,7 +70,7 @@ QPushButton:pressed {
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-	background-color: #c7c3c3;
+	background-color: rgb(255, 255, 255);
 	border-radius: 6;
 }
 
@@ -97,22 +97,28 @@ QPushButton:pressed {
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>16</pointsize>
      </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QListWidget {
-	background-color: #c7c3c3;
+	background-color: rgb(255, 255, 255);
 	color: black;	
 	border-radius: 7;
 }</string>
+    </property>
+    <property name="batchSize">
+     <number>50</number>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>10</y>
+      <x>290</x>
+      <y>20</y>
       <width>241</width>
       <height>31</height>
      </rect>
@@ -132,6 +138,64 @@ QPushButton:pressed {
     </property>
    </widget>
   </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>810</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="info"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Список вопросов</string>
+    </property>
+    <addaction name="action_house"/>
+    <addaction name="action_institut"/>
+    <addaction name="action_rukovodstvo"/>
+    <addaction name="action_org"/>
+    <addaction name="action_abbit"/>
+   </widget>
+   <addaction name="menu_2"/>
+   <addaction name="menu"/>
+  </widget>
+  <action name="info">
+   <property name="text">
+    <string>Информация о помощнике</string>
+   </property>
+  </action>
+  <action name="action_house">
+   <property name="text">
+    <string>Про общежития</string>
+   </property>
+  </action>
+  <action name="action_institut">
+   <property name="text">
+    <string>Про институты</string>
+   </property>
+  </action>
+  <action name="action_rukovodstvo">
+   <property name="text">
+    <string>Про руководство</string>
+   </property>
+  </action>
+  <action name="action_org">
+   <property name="text">
+    <string>Про общественные организации</string>
+   </property>
+  </action>
+  <action name="action_abbit">
+   <property name="text">
+    <string>Информация для абитуриентов</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
