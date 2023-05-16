@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Organization</class>
+ <widget class="QMainWindow" name="Organization">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>716</width>
+    <height>504</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(85, 85, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>10</y>
+      <width>491</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <strikeout>false</strikeout>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>Вопросы про общ. организации</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>60</y>
+      <width>641</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>1. Расскажи про объединенный совет обучающихся</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2. Кто входит в состав объединенного совета обучающихся?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3. Расскажи про Союз иностранных студентов</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4. Расскажи про Союз студентов и аспирантов</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5. Расскажи про Студенческую антикоррупционную комиссию</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>6. Расскажи про Студенческую службу безопасности</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>7. Расскажи про Студенческий спортивный клуб</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>8. Расскажи про Студенческий медиацентр</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>9. Расскажи про Студенческий совет общежитий</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>10. Расскажи про Штаб студенческих отрядов</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>11. Расскажи про Студенческий волонтерский центр</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>12. Расскажи про Студенческое научное общество</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>13. Расскажи про Студенческий киберспортивный клуб</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>14. Расскажи про Совет старост</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Rukovodstvo</class>
+ <widget class="QMainWindow" name="Rukovodstvo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>716</width>
+    <height>478</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(85, 85, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>10</y>
+      <width>411</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <strikeout>false</strikeout>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>Вопросы про руководство</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>60</y>
+      <width>641</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>1. Кто входит в ректорат универа?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2. Кто ректор вуза?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3. Расскажи про Абдуллазянова Эдварда Юнусовича</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4. Кто Первый проректор - проректор по учебной работе вуза?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5. Расскажи про Леонтьева Александра Васильевича</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>6. Кто Проректор по развитию и инновациям вуза?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>7. Расскажи про Ахметову Ирину Гареевну</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>8. Кто Проректор по воспитательной и социальной работе вуза?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>9. Расскажи про Жукову Ирину Викторовну</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>10. Кто Проректор по науке и коммерциализации вуза?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>11. Расскажи про Ившина Игоря Владимировича</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>12. Кто Проректор по экономике и финансам вуза?</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>13. Расскажи про Шамееву Альбину Ильхамовну</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
